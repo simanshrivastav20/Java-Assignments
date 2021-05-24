@@ -1,27 +1,19 @@
-package Assignment;
+package Assignment2;
 
 import java.util.Scanner;
-// a Java program that reads a floating-point number and prints "zero" if the number is zero..
 
 public class FloatingPointNumber {
     public static void main(String[] args) {
-        Scanner i = new Scanner(System.in);
-        System.out.println("Enter any number:");
-        int number=i.nextInt();
-        if (number==0){
-            System.out.println("Zero");
+        Scanner floating = new Scanner(System.in);
+        System.out.println("Enter first number:");
+        float num1 = floating.nextFloat();
+        System.out.println("Enter second number:");
+        float num2 = floating.nextFloat();
+        if ((num1 - num2) <= 0.01) {
+            System.out.println("These numbers are the same.");
         }
-        // Add  "large" if it exceeds 1,000,000.
-        else if (number>=1){
-            if (number>100000){
-                System.out.println("positive large");
-            }
-            // Otherwise, print "positive" or "negative"
-            else   System.out.println("positive");
-
-        }
-        else if (number<0){
-            System.out.println("negetive");
+        else {
+            System.out.println("These numbers are different.");
         }
     }
 }

@@ -11,69 +11,49 @@ public class MonthsAndDays {
         System.out.println("What month do you want to know?");
         String month_name = months.next();
         switch (month_name) {
-            case "Janaury":
+            case "January":
                 days_in_month = 31;
                 break;
-        }
-        switch (month_name) {
-            case "Febraury":
+            case "February":
                 days_in_month = 29;
                 break;
-        }
-        switch (month_name) {
             case "March":
                 days_in_month = 30;
                 break;
-
-        }
-        switch (month_name) {
             case "April":
                 days_in_month = 31;
                 break;
-        }
-        switch (month_name) {
             case "May":
-                days_in_month = 30;
+                days_in_month = 31;
                 break;
-        }
-        switch (month_name) {
             case "June":
                 days_in_month = 31;
-                break;}
-        switch (month_name) {
-            case "July":
-                days_in_month = 30;
                 break;
-        }
-        switch (month_name) {
+            case "July":
+                days_in_month = 31;
+                break;
             case "August":
                 days_in_month = 31;
                 break;
-        }
-        switch (month_name) {
             case "September":
-                days_in_month = 30;
-                break;}
-        switch (month_name) {
+                days_in_month = 31;
+                break;
             case "October":
                 days_in_month = 31;
                 break;
-        }
-        switch (month_name) {
             case "November":
-                days_in_month = 30;
+                days_in_month = 31;
                 break;
-        }
-        switch (month_name) {
             case "December":
                 days_in_month = 31;
                 break;
+            default :
+                System.out.println("INVALID MONTH");
+
         }
 
 
-        System.out.println(month_name + " has " + days_in_month + " days");
-//        default :
-//        System.out.println("INVALID MONTH");
 
+        System.out.println(month_name + " has " + days_in_month + " days");
     }
 }
